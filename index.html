@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDLF | Egyptian Diving & Lifesaving Federation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <a href="#" class="logo">EDLF</a>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About us</a>
+            <a href="#team">The team</a>
+            <a href="#contact">Contact us</a>
+            <a href="calendar.html">Calendar</a> <!-- page 2 (coming next) -->
+            <button class="theme-btn" id="theme-btn" title="Dark / light mode">🌙</button> 
+        </div>
+
+        <button class="menu-btn" id="menu-btn">☰</button>
+    </nav>
+
+    <section class="hero">
+        <div class="frame">
+            <span class="line-top"></span>
+            <span class="line-left1"></span>
+            <span class="line-left2"></span>
+            <span class="line-right1"></span>
+            <span class="line-right2"></span>
+            <span class="line-bottom1"></span>
+            <span class="line-bottom2"></span>
+        </div>
+
+        <h1 class="hero-title">Scuba diving</h1>
+
+        <div class="hero-diver"></div>
+
+        <a href="#about" class="scroll-down">
+            <svg viewBox="0 0 34 60" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+                <path d="M17 2 V56 M4 43 L17 56 L30 43" />
+            </svg>
+            Scroll to explore more
+        </a>
+    </section>
+
+    <section id="about">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <div class="section-title">
+                    <span>who we are</span>
+                    <h2>EDLF All Over The World</h2>
+                </div>
+                <p>
+                    Since <strong>1983</strong>, the Egyptian Diving and Lifesaving Federation has been training divers
+                    and diving instructors to the highest level of safety, commitment and professional work.
+                </p>
+                <p>
+                    The federation was founded after Egypt regained Sinai, when diving and lifesaving became a big part
+                    of sport and tourism on the Red Sea. In the same year it joined the
+                    <strong>International Life Saving Federation (ILS)</strong>, and soon after the
+                    <strong>World Underwater Federation (CMAS)</strong>.
+                </p>
+            </div>
+
+            <div class="stats reveal">
+                <div class="stat">
+                    <h3 class="counter" data-target="1983">0</h3>
+                    <p>Year founded</p>
+                </div>
+                <div class="stat">
+                    <h3 class="counter" data-target="17">0</h3>
+                    <p>Founding clubs</p>
+                </div>
+                <div class="stat">
+                    <h3 class="counter" data-target="4">0</h3>
+                    <p>Regions in Egypt</p>
+                </div>
+                <div class="stat">
+                    <h3 class="counter" data-target="2">0</h3>
+                    <p>World federations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission" id="mission">
+        <div class="container reveal">
+            <div class="section-title">
+                <span>our mission</span>
+                <h2>Mission</h2>
+            </div>
+            <p class="mission-quote">
+                One of our goals is to spread diving to every community, so that safety wins on land and at sea.
+            </p>
+            <p class="mission-author">— Egyptian Diving & Lifesaving Federation</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="goals">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>what we work for</span>
+                <h2>Our Goals</h2>
+            </div>
+
+            <div class="goals-grid">
+                <div class="goal reveal">
+                    <div class="goal-number">01</div>
+                    <h3>World-class methods</h3>
+                    <p>We always bring the best diving methods in the world to Egyptian divers, clubs and instructors.</p>
+                </div>
+                <div class="goal reveal">
+                    <div class="goal-number">02</div>
+                    <h3>A new vision for diving</h3>
+                    <p>We bring a fresh perspective to diving and keep improving how it is taught and practised.</p>
+                </div>
+                <div class="goal reveal">
+                    <div class="goal-number">03</div>
+                    <h3>Serving every diver</h3>
+                    <p>We serve divers, instructors and diving lovers in Egypt and all over the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sports" id="sports">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>our sports</span>
+                <h2>Disciplines</h2>
+                <p>All the water sports the federation looks after.</p>
+            </div>
+
+            <div class="cards" id="sports-list"></div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>the team</span>
+                <h2>Top Teams</h2>
+                <p>Egypt's best national, youth, club and university teams.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-type="All">All</button>
+                <button class="filter-btn" data-type="National">National</button>
+                <button class="filter-btn" data-type="Youth">Youth</button>
+                <button class="filter-btn" data-type="Club">Club</button>
+                <button class="filter-btn" data-type="University">University</button>
+            </div>
+
+            <div class="cards" id="teams-list"></div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>moments</span>
+                <h2>Gallery</h2>
+                <p>Click a photo to see it bigger.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="gallery/img1.jpg" alt="Diver swimming through a coral canyon">
+                    <p>Exploring the reef</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="gallery/img2.jpg" alt="Two divers in black and white">
+                    <p>Buddy diving</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="gallery/img3.jpg" alt="Divers climbing onto a boat at sunset">
+                    <p>Sunset dive</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="gallery/img4.jpg" alt="Diver with a mask at the water surface">
+                    <p>Ready to descend</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="gallery/img5.jpg" alt="Diver descending between coral walls full of fish">
+                    <p>Into the blue</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="gallery/img6.jpg" alt="Instructor and student diving together">
+                    <p>Training dive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Gallery photo" id="lightbox-img">
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="flag"><span></span><span></span><span></span></div>
+
+        <div class="container footer-grid">
+            <div>
+                <p class="logo">EDLF</p>
+                <p>Egyptian Diving & Lifesaving Federation. Training divers and lifeguards since 1983. Member of ILS and CMAS.</p>
+            </div>
+            <div>
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#goals">Our goals</a></li>
+                    <li><a href="#team">The team</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact us</h3>
+                <ul>
+                    <li>📍 Cairo International Stadium, Swimming Pool Complex, 3rd Floor, Nasr City, Cairo</li>
+                    <li>📞 <a href="tel:+20220825015">+20 2 2082 5015</a></li>
+                    <li>✉️ <a href="mailto:edlf@edlf-eg.org">edlf@edlf-eg.org</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">© 2026 EDLF — Student redesign project</p>
+    </footer>
+
+
+    <script>
+        
+
+        const sports = [
+            { name: "Scuba Diving", icon: "🤿", type: "Diving", place: "Red Sea", description: "Diving with an air tank to explore Egypt's coral reefs and famous wrecks." },
+            { name: "Freediving", icon: "🌊", type: "Diving", place: "Dahab", description: "Diving on one breath. Dahab's Blue Hole is one of the best spots in the world." },
+            { name: "Finswimming", icon: "🏊", type: "Competition", place: "Cairo Stadium", description: "The fastest swimming sport, using a monofin or two fins on the surface or underwater." },
+            { name: "Pool Lifesaving", icon: "🛟", type: "Lifesaving", place: "Club pools", description: "Rescue races like carrying a manikin, obstacle swims and throwing a rescue line." },
+            { name: "Beach Lifesaving", icon: "🏖️", type: "Lifesaving", place: "North Coast", description: "Training and licensing the lifeguards who protect Egypt's beaches every summer." },
+            { name: "Underwater Photography", icon: "📷", type: "Diving", place: "Ras Mohammed", description: "Taking photos of reefs, fish and wrecks in the clear water of the Red Sea." }
+        ];
+
+        const teams = [
+            { name: "Egypt National Finswimming Team", type: "National", city: "Cairo", sport: "Finswimming", medals: 34 },
+            { name: "Egypt National Lifesaving Team", type: "National", city: "Cairo", sport: "Lifesaving", medals: 29 },
+            { name: "Egypt Youth Finswimming Team (U18)", type: "Youth", city: "Cairo", sport: "Finswimming", medals: 26 },
+            { name: "Egypt Junior Lifesavers (U16)", type: "Youth", city: "Alexandria", sport: "Lifesaving", medals: 17 },
+            { name: "Al Ahly SC", type: "Club", city: "Cairo", sport: "Finswimming", medals: 23 },
+            { name: "Zamalek SC", type: "Club", city: "Giza", sport: "Finswimming", medals: 21 },
+            { name: "Smouha SC", type: "Club", city: "Alexandria", sport: "Underwater Hockey", medals: 12 },
+            { name: "Suez Canal Authority Club", type: "Club", city: "Ismailia", sport: "Beach Lifesaving", medals: 14 },
+            { name: "Cairo University", type: "University", city: "Giza", sport: "Finswimming", medals: 14 },
+            { name: "Alexandria University", type: "University", city: "Alexandria", sport: "Lifesaving", medals: 12 }
+        ];
+
+
+        
+        function showSports() {
+            let html = "";
+
+            sports.forEach(function (sport) {
+                html += `
+                    <div class="sport-card reveal">
+                        <div class="sport-icon">${sport.icon}</div>
+                        <h3>${sport.name}</h3>
+                        <p>${sport.description}</p>
+                        <span class="tag">${sport.type}</span>
+                        <span class="tag">📍 ${sport.place}</span>
+                    </div>
+                `;
+            });
+
+            document.getElementById("sports-list").innerHTML = html;
+        }
+
+
+        // ===================================================
+        // TEAMS CARDS + FILTER — Student 2: [Student 2 Name]
+        // ===================================================
+        function showTeams(type) {
+            let html = "";
+
+            teams.forEach(function (team) {
+                if (type === "All" || team.type === type) {
+                    html += `
+                        <div class="team-card ${team.type}">
+                            <span class="team-type">${team.type} team</span>
+                            <h3>${team.name}</h3>
+                            <p class="team-info">📍 ${team.city} · ${team.sport}</p>
+                            <p class="medals">🏅 ${team.medals} medals</p>
+                        </div>
+                    `;
+                }
+            });
+
+            document.getElementById("teams-list").innerHTML = html;
+        }
+
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        filterButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // move the "active" style to the clicked button
+                filterButtons.forEach(function (btn) {
+                    btn.classList.remove("active");
+                });
+                button.classList.add("active");
+
+                showTeams(button.dataset.type);
+            });
+        });
+
+
+        // ===================================================
+        // GALLERY LIGHTBOX — Student 2: [Student 2 Name]
+        // ===================================================
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        document.querySelectorAll(".gallery-item img").forEach(function (img) {
+            img.addEventListener("click", function () {
+                lightboxImg.src = img.src;
+                lightbox.classList.add("open");
+            });
+        });
+
+        lightbox.addEventListener("click", function () {
+            lightbox.classList.remove("open");
+        });
+
+
+        // ===================================================
+        // NAV: dark mode, phone menu, solid on scroll — Student 1: [Student 1 Name]
+        // ===================================================
+        const themeBtn = document.getElementById("theme-btn");
+
+        // remember the last choice
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            themeBtn.textContent = "☀️";
+        }
+
+        themeBtn.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+
+            if (document.body.classList.contains("dark")) {
+                themeBtn.textContent = "☀️";
+                localStorage.setItem("theme", "dark");
+            } else {
+                themeBtn.textContent = "🌙";
+                localStorage.setItem("theme", "light");
+            }
+        });
+
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("open");
+        });
+
+        window.addEventListener("scroll", function () {
+            const nav = document.getElementById("nav");
+
+            if (window.scrollY > 100) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        });
+
+
+        // ===================================================
+        // SCROLL ANIMATIONS + COUNTERS — Student 2: [Student 2 Name]
+        // ===================================================
+        function countUp(counter) {
+            const target = Number(counter.dataset.target);
+            let number = 0;
+            const step = Math.ceil(target / 60);
+
+            const timer = setInterval(function () {
+                number += step;
+                if (number >= target) {
+                    number = target;
+                    clearInterval(timer);
+                }
+                counter.textContent = number;
+            }, 25);
+        }
+
+        // when an element with class "reveal" comes on screen, add "show"
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+
+                    entry.target.querySelectorAll(".counter").forEach(countUp);
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+
+        // ===================================================
+        // START
+        // ===================================================
+        showSports();
+        showTeams("All");
+
+        document.querySelectorAll(".reveal").forEach(function (element) {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
